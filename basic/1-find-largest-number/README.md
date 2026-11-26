@@ -16,6 +16,14 @@ without using `Math.max()`.
 - Handle an empty array
 - Time complexity: O(n)
 
+## How It Works
+
+1. If the input is empty or not an array, return `null`.
+2. Assume the first element is the largest.
+3. Loop through the remaining elements and update the largest value
+   whenever a bigger number is found.
+4. Return the largest value.
+
 ## Usage
 
 ```bash
@@ -31,11 +39,14 @@ Output: 89
 
 ## Edge Cases
 
-- Empty array returns `null`
-- Works with negative numbers
-- Works with a single-element array
+| Input          | Output | Note                 |
+| -------------- | ------ | -------------------- |
+| `[]`           | `null` | Empty array          |
+| `[42]`         | `42`   | Single element       |
+| `[-5, -2, -9]` | `-2`   | All negative numbers |
+| `[7, 7, 7]`    | `7`    | Duplicate values     |
 
 ## Complexity
 
-- Time: O(n), the array is traversed once
-- Space: O(1), only one extra variable is used
+- **Time:** O(n), the array is traversed once
+- **Space:** O(1), only one extra variable is used
