@@ -18,4 +18,9 @@ function findLargest(numbers) {
   return largest;
 }
 
+// Simple test cases
 console.log(findLargest([12, 45, 7, 89, 23])); // 89
+console.log(findLargest([-5, -2, -9])); // -2 (all negative)
+console.log(findLargest([42])); // 42 (single element)
+console.log(findLargest([7, 7, 7])); // 7 (duplicates)
+console.log(findLargest([])); // null (empty array)
