@@ -5,6 +5,7 @@ function findLargest(numbers) {
   if (!Array.isArray(numbers) || numbers.length === 0) {
     return null;
   }
+
   // Start with the first element as the current largest
   let largest = numbers[0];
 
